@@ -7,36 +7,6 @@ import { Container, Typography, Button } from "@material-ui/core";
 import Pie from "../components/Pie";
 import TodayFoodList from "../components/TodayFoodList";
 
-const useStyles = makeStyles((theme) => ({
-  caloricGoalContainer: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    backgroundColor: "#fff",
-    borderRadius: "20px",
-    padding: "10px 5px",
-  },
-  header: {
-    fontSize: "40px",
-    marginBottom: "10px",
-  },
-  caloricGoal: {
-    fontSize: "16px",
-  },
-  eatSomething: {
-    width: "100%",
-    padding: "8px 0",
-    marginBottom: "20px",
-    color: "#fff",
-  },
-  calorieGreen: {
-    color: "green",
-  },
-  calorieRed: {
-    color: "red",
-  },
-}));
-
 const Home = () => {
   const { caloricGoal, setCurrPage, consumedCalories } = useContext(AppContext);
   const classes = useStyles();
@@ -83,3 +53,33 @@ const Home = () => {
 };
 
 export default Home;
+
+const useStyles = makeStyles((theme) => ({
+  caloricGoalContainer: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    backgroundColor: "#fff",
+    borderRadius: "20px",
+    padding: "10px 5px",
+  },
+  header: {
+    fontSize: "40px",
+    marginBottom: "10px",
+  },
+  caloricGoal: {
+    fontSize: "16px",
+  },
+  eatSomething: {
+    width: "100%",
+    padding: "8px 0",
+    marginBottom: "20px",
+    color: "#fff",
+  },
+  calorieGreen: {
+    color: "green",
+  },
+  calorieRed: {
+    color: "red",
+  },
+}));

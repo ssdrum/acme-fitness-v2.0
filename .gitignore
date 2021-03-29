@@ -1,2 +1,5 @@
 # dependencies
 /node_modules
+
+# Easybase config file
+/src/ebconfig.js

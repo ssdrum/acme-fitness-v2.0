@@ -1,10 +1,9 @@
 import React, { createContext, useState, useEffect } from "react";
+import { useEasybase } from "easybase-react";
 
 export const AppContext = createContext();
 
 export const AppProvider = (props) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false); // Change to true for testing
-
   const [userData, setUserData] = useState({
     age: null,
     sex: null,
@@ -24,6 +23,7 @@ export const AppProvider = (props) => {
   ]);
   const [consumedCalories, setConsumedCalories] = useState(0);
   const [listData, setListData] = useState([]);
+  const [showMenu, setShowMenu] = useState(true);
 
   const calcCaloricGoal = () => {
     // Calc BMR (Basal Metabolic Rate)
@@ -116,14 +116,13 @@ export const AppProvider = (props) => {
   return (
     <AppContext.Provider
       value={{
-        isAuthenticated: isAuthenticated,
         currPage: currPage,
         userData: userData,
         listData: listData,
         consumedCalories: consumedCalories,
         caloricGoal: caloricGoal,
         BMIData: BMIData,
-        setIsAuthenticated: setIsAuthenticated,
+        showMenu: showMenu,
         addItem: addItem,
         removeItem: removeItem,
         setUserData: setUserData,
@@ -132,6 +131,7 @@ export const AppProvider = (props) => {
         setConsumedCalories: setConsumedCalories,
         setCurrPage: setCurrPage,
         calcBMI: calcBMI,
+        setShowMenu: setShowMenu,
       }}
     >
       {props.children}

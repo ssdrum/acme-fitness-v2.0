@@ -1,17 +1,20 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
+import { useEasybase } from "easybase-react";
 
-const ProtectedRoute = ({ isAuthenticated, component: Component, ...rest }) => {
+const ProtectedRoute = ({ component: Component, ...rest }) => {
+  const { isUserSignedIn } = useEasybase();
+
   return (
     <Route
       {...rest}
       render={(props) => {
-        if (isAuthenticated) {
+        if (isUserSignedIn()) {
           return <Component />;
         } else {
           return (
             <Redirect
-              to={{ pathname: "/welcome", state: { from: props.location } }}
+              to={{ pathname: "/login", state: { from: props.location } }}
             />
           );
         }

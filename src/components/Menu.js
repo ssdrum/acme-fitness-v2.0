@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "./AppContext";
+import { useEasybase } from "easybase-react";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import {
@@ -15,19 +17,16 @@ import FitnessCenterIcon from "@material-ui/icons/FitnessCenter";
 import SettingsIcon from "@material-ui/icons/Settings";
 
 // Material UI Styles
-const useStyles = makeStyles((theme) => ({
-  logoContainer: {
-    marginTop: "20px",
-    marginBottom: "50px",
-  },
-  link: {
-    textDecoration: "none",
-    color: theme.palette.text.primary,
-  },
-}));
 
 const Menu = ({ toggleDrawer, menuOpen }) => {
+  const { setShowMenu } = useContext(AppContext);
   const classes = useStyles();
+  const { signOut } = useEasybase();
+
+  const handleLogout = () => {
+    signOut();
+    setShowMenu(false);
+  };
 
   return (
     <Drawer
@@ -94,9 +93,21 @@ const Menu = ({ toggleDrawer, menuOpen }) => {
             <ListItemText>Settings</ListItemText>
           </ListItem>
         </Link>
+        <ListItem onClick={handleLogout}>Log Out</ListItem>
       </List>
     </Drawer>
   );
 };
 
 export default Menu;
+
+const useStyles = makeStyles((theme) => ({
+  logoContainer: {
+    marginTop: "20px",
+    marginBottom: "50px",
+  },
+  link: {
+    textDecoration: "none",
+    color: theme.palette.text.primary,
+  },
+}));
