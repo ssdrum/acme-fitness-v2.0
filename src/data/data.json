@@ -1,0 +1,84 @@
+{
+  "products": {
+    "cardio": [
+      {
+        "title": "BH Fitness G6310 Runlab Home Treadmill",
+        "img": "/img/treadmill-1.jpeg",
+        "link": "https://www.acmefitness.com/home-fitness/cardiovascular/treadmills/g6310-runlab-home-treadmill",
+        "rating": 4
+      },
+      {
+        "title": "BH Fitness G6487 Pioneer R3 Treadmill",
+        "img": "/img/treadmill-2.jpeg",
+        "link": "https://www.acmefitness.com/home-fitness/cardiovascular/treadmills/g6487-pioneer-r3-treadmill",
+        "rating": 4
+      },
+      {
+        "title": "BH Fitness BT7016 Fun Desktop Treadmill",
+        "img": "/img/treadmill-3.jpeg",
+        "link": "https://www.acmefitness.com/home-fitness/cardiovascular/treadmills/bt7016-fun-desktop-treadmill",
+        "rating": 5
+      },
+      {
+        "title": "BH Fitness BT7020 Run Desk Pro Treadmill",
+        "img": "/img/treadmill-4.jpeg",
+        "link": "https://www.acmefitness.com/home-fitness/cardiovascular/treadmills/bt7020-run-desk-pro-treadmill",
+        "rating": 4
+      },
+      {
+        "title": "Nautilus T628 Home Treadmill",
+        "img": "/img/treadmill-5.jpeg",
+        "link": "https://www.acmefitness.com/home-fitness/cardiovascular/treadmills/t628-home-treadmill",
+        "rating": 5
+      }
+    ],
+    "strength": [
+      {
+        "title": "Inspire M2 Multi Gym",
+        "img": "/img/strength-1.jpeg",
+        "link": "https://www.acmefitness.com/home-fitness/strength/home-gyms/m2-multi-gym",
+        "rating": 3
+      },
+      {
+        "title": "Inspire BL1 Body Lift",
+        "img": "/img/strength-2.jpeg",
+        "link": "https://www.acmefitness.com/home-fitness/strength/home-gyms/bl1-body-lift",
+        "rating": 4
+      },
+      {
+        "title": "Inspire FT1 Functional Trainer",
+        "img": "/img/strength-3.jpeg",
+        "link": "https://www.acmefitness.com/home-fitness/strength/home-gyms/ft1-functional-trainer",
+        "rating": 5
+      },
+      {
+        "title": "Bowflex BFX-4-1 Bench",
+        "img": "/img/strength-4.jpeg",
+        "link": "https://www.acmefitness.com/home-fitness/strength/benches/bfx-4-1-bench",
+        "rating": 4
+      }
+    ]
+  },
+  "instructors": [
+    {
+      "name": "Erin Burton",
+      "description": "Specialized in cardio and aquagym",
+      "img": "/img/instructor-1.png"
+    },
+    {
+      "name": "Maurice Arnold",
+      "description": "Specialized bodyweight exercise",
+      "img": "/img/instructor-2.jpeg"
+    },
+    {
+      "name": "Grant Dennis",
+      "description": "Specialized in physiotherapy",
+      "img": "/img/instructor-3.jpeg"
+    },
+    {
+      "name": "Austin Fernandez",
+      "description": "Specialized in weight-lifting",
+      "img": "/img/instructor-4.jpeg"
+    }
+  ]
+}

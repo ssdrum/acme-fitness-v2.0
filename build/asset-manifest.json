@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/acme-fitness-v1.1/static/css/main.d0986f3d.chunk.css",
+    "main.js": "/acme-fitness-v1.1/static/js/main.e3f1085f.chunk.js",
+    "main.js.map": "/acme-fitness-v1.1/static/js/main.e3f1085f.chunk.js.map",
+    "runtime-main.js": "/acme-fitness-v1.1/static/js/runtime-main.a61eafad.js",
+    "runtime-main.js.map": "/acme-fitness-v1.1/static/js/runtime-main.a61eafad.js.map",
+    "static/js/2.39b64f2a.chunk.js": "/acme-fitness-v1.1/static/js/2.39b64f2a.chunk.js",
+    "static/js/2.39b64f2a.chunk.js.map": "/acme-fitness-v1.1/static/js/2.39b64f2a.chunk.js.map",
+    "index.html": "/acme-fitness-v1.1/index.html",
+    "service-worker.js": "/acme-fitness-v1.1/service-worker.js",
+    "service-worker.js.map": "/acme-fitness-v1.1/service-worker.js.map",
+    "static/css/main.d0986f3d.chunk.css.map": "/acme-fitness-v1.1/static/css/main.d0986f3d.chunk.css.map",
+    "static/js/2.39b64f2a.chunk.js.LICENSE.txt": "/acme-fitness-v1.1/static/js/2.39b64f2a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a61eafad.js",
+    "static/js/2.39b64f2a.chunk.js",
+    "static/css/main.d0986f3d.chunk.css",
+    "static/js/main.e3f1085f.chunk.js"
+  ]
+}
